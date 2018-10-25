@@ -15,16 +15,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Case__fy">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
     <!-- Android-->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#f8aa27">
-    <link rel="icon" type="image/png" href="images/touch/android-chrome-192x192.png" sizes="192x192">
     <!-- Windows-->
-    <meta name="msapplication-TileImage" content="images/touch/mstile-144x144.png">
     <meta name="msapplication-TileColor" content="#f8aa27">
     <!-- Standard-->
-    <link rel="icon" type="image/png" href="images/touch/favicon.png" sizes="128x128">
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Styles--><link rel="stylesheet" href="styles/plugins.css">
 <link rel="stylesheet" href="styles/main.css">
@@ -132,7 +128,7 @@
         </div>
       </header>
       <main class="page-main">
-        <section class="mainSlider prodSlider prodSlider--gen mainHeight animate">
+        <section class="mainSlider prodSlider prodSlider--gen animate">
           <div class="container p-relative">
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
@@ -172,14 +168,10 @@
                 <div class="is-col is-col__md-2 is-col__xs-12 swiper-center">
                   <div class="swiper-btn-prev"><span class="icon-left"></span></div>
                   <div class="swiper-loader">
-                    <div id="circle-loader-wrap">
-                      <div class="left-wrap">
-                        <div class="loader"></div>
-                      </div>
-                      <div class="right-wrap">
-                        <div class="loader"></div>
-                      </div>
-                    </div>
+                    <svg class="progress" width="30" height="30" viewBox="0 0 30 30">
+                      <circle cx="15" cy="15" r="14" fill="none" stroke="#e1e1e1" stroke-width="2"></circle>
+                      <circle class="progress__value" cx="15" cy="15" r="14" fill="none" stroke="#05a541" stroke-width="2"></circle>
+                    </svg>
                   </div>
                   <div class="swiper-btn-next"><span class="icon-right"></span></div>
                 </div>

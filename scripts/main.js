@@ -4,12 +4,10 @@
 $(document).ready(function () {
 
 	$(function () {
-		// setTimeout(function () {
 		$('html').addClass('addAnimate');
-		// }, 1000)
 		setTimeout(function () {
 			$('html').addClass('addLoader');
-		}, 1000);
+		}, 1500);
 	});
 
 	// anchor
@@ -27,6 +25,25 @@ $(document).ready(function () {
 		$(this).prev().addClass('active');
 	});
 	// .page-searchm
+
+	// form
+	$(".btn--js").on("click", function () {
+		$(this).hide();
+		$('.sent--js').show();
+		$(this).parent().addClass('sent');
+		$(this).parent().find('.form__group').css('opacity', 0);
+		$(this).parent().find('h2').text('Спасибо. Мы свяжемся с Вами в ближайшее время.');
+		return false; // TEMP
+	});
+	$(".sent--js").on("click", function () {
+		$(this).hide();
+		$('.btn--js').show();
+		$(this).parent().removeClass('sent');
+		$(this).parent().find('.form__group').css('opacity', 1);
+		$(this).parent().find('h2').text('Оставьте заявку на консультацию');
+		return false; // TEMP
+	});
+	// form
 
 	// type file
 	$(function () {
@@ -271,6 +288,32 @@ $(document).ready(function () {
 		})();
 	}
 	// range slider
+
+	//sticky
+	var $sticky = $('.sticky');
+	var $stickyrStopper = $('.sticky-stopper');
+	if (!!$sticky.offset()) {
+		(function () {
+			var generalSidebarHeight = $sticky.innerHeight();
+			var stickyTop = $sticky.offset().top;
+			var stickOffset = 0;
+			var stickyStopperPosition = $stickyrStopper.offset().top;
+			var stopPoint = stickyStopperPosition - generalSidebarHeight - stickOffset - $sticky.height() / 3;
+			var diff = stopPoint + stickOffset - $sticky.height() / 2.3;
+
+			$(window).scroll(function () {
+				var windowTop = $(window).scrollTop();
+				if (stopPoint < windowTop) {
+					$sticky.css({ position: 'absolute', top: diff });
+				} else if (stickyTop < windowTop + stickOffset) {
+					$sticky.css({ position: 'fixed', top: stickOffset });
+				} else {
+					$sticky.css({ position: 'absolute', top: 'initial' });
+				}
+			});
+		})();
+	}
+	//sticky
 });
 // ready
 

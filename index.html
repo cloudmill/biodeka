@@ -15,16 +15,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Case__fy">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
     <!-- Android-->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#f8aa27">
-    <link rel="icon" type="image/png" href="images/touch/android-chrome-192x192.png" sizes="192x192">
     <!-- Windows-->
-    <meta name="msapplication-TileImage" content="images/touch/mstile-144x144.png">
     <meta name="msapplication-TileColor" content="#f8aa27">
     <!-- Standard-->
-    <link rel="icon" type="image/png" href="images/touch/favicon.png" sizes="128x128">
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Styles--><link rel="stylesheet" href="styles/plugins.css">
 <link rel="stylesheet" href="styles/main.css">
@@ -171,14 +167,10 @@
                   <div class="is-col is-col__md-2 is-col__xs-12 swiper-center">
                     <div class="swiper-btn-prev"><span class="icon-left"></span></div>
                     <div class="swiper-loader">
-                      <div id="circle-loader-wrap">
-                        <div class="left-wrap">
-                          <div class="loader"></div>
-                        </div>
-                        <div class="right-wrap">
-                          <div class="loader"></div>
-                        </div>
-                      </div>
+                      <svg class="progress" width="30" height="30" viewBox="0 0 30 30">
+                        <circle cx="15" cy="15" r="14" fill="none" stroke="#e1e1e1" stroke-width="2"></circle>
+                        <circle class="progress__value" cx="15" cy="15" r="14" fill="none" stroke="#05a541" stroke-width="2"></circle>
+                      </svg>
                     </div>
                     <div class="swiper-btn-next"><span class="icon-right"></span></div>
                   </div>
@@ -263,10 +255,10 @@
         <section class="mainBenefits">
           <div class="container scrollme">
             <div class="text--center scrollme-inner hidden__xs hidden__sm">
-              <div class="animateme" data-when="span" data-from="1" data-to="0" data-translatey="-400"><img src="images/scrollMe-1.png" alt=""></div>
-              <div class="animateme" data-when="span" data-from="0.5" data-to="0" data-translatey="-450"><img src="images/scrollMe-2.png" alt=""></div>
-              <div class="animateme" data-when="span" data-from="1" data-to="0" data-translatey="-300"><img src="images/scrollMe-3.png" alt=""></div>
-              <div class="animateme" data-when="span" data-from="1" data-to="0" data-translatey="-200"><img src="images/scrollMe-4.png" alt=""></div>
+              <div class="animateme" data-when="exit" data-from="1" data-to="0" data-translatey="-400"><img src="images/scrollMe-1.png" alt=""></div>
+              <div class="animateme" data-when="exit" data-from="0.5" data-to="0" data-translatey="-450"><img src="images/scrollMe-2.png" alt=""></div>
+              <div class="animateme" data-when="exit" data-from="1" data-to="0" data-translatey="-300"><img src="images/scrollMe-3.png" alt=""></div>
+              <div class="animateme" data-when="exit" data-from="1" data-to="0" data-translatey="-200"><img src="images/scrollMe-4.png" alt=""></div>
               <div class="secBlock"><img src="images/scrollMe-5.png" alt=""></div>
               <div class="firstBlock"><img src="images/scrollMe-6.png" alt=""></div>
             </div>
@@ -278,7 +270,7 @@
               <div class="secBlock"><img src="images/scrollMe-5.png" alt=""></div>
               <div class="firstBlock"><img src="images/scrollMe-6.png" alt=""></div>
             </div>
-            <div class="animateme" data-when="enter" data-from="1" data-to="0" data-translatey="-200">
+            <div class="animateme" data-when="span" data-from="1" data-to="0" data-translatey="-300">
               <h2>Преимущества продукции</h2>
               <div class="is-col__md-7">
                 <div class="is-row benefitsComp">
@@ -468,6 +460,7 @@
                 </div>
               </div>
               <button class="btn btn--outlined btn--full btn--js" type="submit"><span>Получить консультацию</span><span class="icon-right"></span></button>
+              <button class="btn btn--outlined btn--full sent--js" style="display:none"><span>Отправить еще</span><span class="icon-right"></span></button>
               <div class="mainForm-img-1"><img src="images/main-leaf-1.png" alt=""></div>
               <div class="mainForm-img-2"><img src="images/main-leaf-2.png" alt=""></div>
             </form>
