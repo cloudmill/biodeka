@@ -1993,25 +1993,21 @@ blockquote {
         -ms-flex-order: 1;
             order: 1; } }
 
-.sub-nav a {
-  display: block;
-  padding-left: 40px; }
+.sub-nav {
+  font-size: 13px;
+  display: none; }
+  .sub-nav a {
+    display: block;
+    padding: 5px 0 5px 40px; }
+    @media screen and (min-width: 992px) {
+      .sub-nav a {
+        padding-left: 0; } }
+    .sub-nav a:hover {
+      text-decoration: none; }
   @media screen and (min-width: 992px) {
-    .sub-nav a {
-      padding-left: 0; } }
-  .sub-nav a:hover {
-    text-decoration: none; }
-
-@media screen and (min-width: 992px) {
-  .sub-nav {
-    display: none;
-    position: absolute;
-    background: #ccc;
-    top: 0;
-    left: 100%;
-    min-width: 200px; }
-    li:hover .sub-nav {
-      display: block; } }
+    .sub-nav {
+      margin-top: -10px;
+      font-size: 14px; } }
 
 .main-nav {
   margin-bottom: 0;
@@ -2020,9 +2016,15 @@ blockquote {
   .main-nav__item {
     position: relative;
     display: block; }
+    .main-nav__item--parent > a {
+      background: url("../images/menu-arr.svg") no-repeat center right 20px; }
+    .main-nav__item--parent.active > a {
+      background: url("../images/icons/arrow-up.png") no-repeat center right 20px; }
     @media screen and (min-width: 992px) {
       .main-nav__item--parent > a {
-        background: url("../images/menu-arr.svg") no-repeat center right; } }
+        background: url("../images/menu-arr.svg") no-repeat center right; }
+      .main-nav__item--parent.active > a {
+        background: url("../images/icons/arrow-up.png") no-repeat center right; } }
   .main-nav__link {
     position: relative;
     padding: 15px;
@@ -2032,14 +2034,12 @@ blockquote {
       .main-nav__link {
         padding: 2.5vh 15px 2.5vh 0;
         display: inline-block; } }
-    .main-nav__link:hover, .main-nav__link:focus {
-      color: #fff;
-      background-color: #05a541; }
+    .main-nav__link.active, .main-nav__link:hover, .main-nav__link:focus {
+      color: #a6c42a;
+      background-color: transparent; }
       @media screen and (min-width: 992px) {
-        .main-nav__link:hover, .main-nav__link:focus {
-          text-decoration: underline;
-          color: #05a541;
-          background-color: transparent; } }
+        .main-nav__link.active, .main-nav__link:hover, .main-nav__link:focus {
+          text-decoration: underline; } }
   .main-nav img {
     max-width: none; }
   .main-nav__toggle {
