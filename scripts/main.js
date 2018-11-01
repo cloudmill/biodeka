@@ -3,6 +3,18 @@
 
 $(document).ready(function () {
 
+	// svg
+	var p = document.querySelector('.progress__value'),
+	    offset = 200;
+	var offsetMe = function offsetMe() {
+		if (offset < 0) offset = 200;
+		p.style.strokeDashoffset = offset;
+		offset--;
+		requestAnimationFrame(offsetMe);
+	};
+	offsetMe();
+	// svg
+
 	$(function () {
 		$('html').addClass('addAnimate');
 		setTimeout(function () {

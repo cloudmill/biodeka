@@ -85,27 +85,24 @@
       margin: 2px 30px 0; } }
 
 .addLoader .progress__value {
-  stroke-dasharray: 89.292;
-  stroke-dashoffset: 89.292;
-  -webkit-animation: progress 4s infinite;
-     -moz-animation: progress 4s infinite;
-          animation: progress 4s infinite; }
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200; }
 
 @-webkit-keyframes progress {
   0% {
-    stroke-dashoffset: 89.292; }
+    stroke-dashoffset: 100; }
   100% {
     stroke-dashoffset: 0; } }
 
 @-moz-keyframes progress {
   0% {
-    stroke-dashoffset: 89.292; }
+    stroke-dashoffset: 100; }
   100% {
     stroke-dashoffset: 0; } }
 
 @keyframes progress {
   0% {
-    stroke-dashoffset: 89.292; }
+    stroke-dashoffset: 100; }
   100% {
     stroke-dashoffset: 0; } }
 
@@ -998,7 +995,9 @@ input[type="checkbox"]:focus {
 
 textarea.control, .select2-container--default textarea.select2-selection--single {
   height: auto;
-  resize: none; }
+  resize: none;
+  overflow: auto;
+  font-family: 'geometriaRegular'; }
 
 select.control, .select2-container--default select.select2-selection--single {
   -webkit-appearance: none;
@@ -2509,27 +2508,11 @@ button.close {
   z-index: 992;
   background: #fff;
   border-right: 1px solid #eaeaea;
-  padding-top: 20px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  padding-top: 20px; }
   @media screen and (min-width: 992px) {
     .page-aside {
       width: 200px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex; } }
+      display: block; } }
   @media screen and (min-width: 1690px) {
     .page-aside {
       padding-top: 30px;
@@ -2538,9 +2521,21 @@ button.close {
 .page-menu {
   padding: 10px 0;
   margin: auto; }
+  @media screen and (min-width: 992px) {
+    .page-menu {
+      margin: 3vh auto; } }
+  @media screen and (min-width: 1300px) {
+    .page-menu {
+      margin: 5vh auto; } }
 
 .page-set {
   margin-top: auto; }
+  @media screen and (min-width: 992px) {
+    .page-set {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0; } }
 
 .page-logo img {
   width: 80px; }
@@ -2865,7 +2860,11 @@ button.close {
             align-items: center; }
     @media screen and (max-width: 767px) {
       .mainSlider .swiper-slide {
-        padding: 30px 0; } }
+        padding: 30px 0;
+        min-height: 420px; } }
+    @media screen and (max-width: 767px) {
+      .mainSlider .swiper-slide--sec img {
+        bottom: -9% !important; } }
   .mainSlider .swiper-settings {
     width: 100%; }
     .mainSlider .swiper-settings .swiper-link img {
@@ -3326,7 +3325,9 @@ button.close {
     cursor: pointer;
     background-color: #05a541;
     width: 120px;
-    height: 120px; }
+    height: 120px;
+    outline: none;
+    border: 0; }
     @media screen and (max-width: 767px) {
       .mainSign button {
         height: 60px;
@@ -3988,7 +3989,6 @@ button.close {
     -moz-transition: opacity 0.5s;
     transition: opacity 0.5s; }
   .page-set {
-    position: relative;
     bottom: -100%;
     -webkit-transition: bottom 0.5s;
     -o-transition: bottom 0.5s;
