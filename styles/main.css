@@ -2662,7 +2662,21 @@ button.close {
     .page-footer .margBot-20, .page-footer .blogs-item__head, .page-footer .blogs-item__title {
       margin-bottom: 10px; }
     .page-footer .page-footer__bottom .bottom__xs .is-col:first-child {
-      margin-bottom: 40px; } }
+      margin-bottom: 40px; }
+    .page-footer .bottom__xs .is-col:first-child {
+      width: 100%; } }
+  @media screen and (max-width: 479px) {
+    .page-footer .top__md .is-col {
+      margin-top: 20px; }
+      .page-footer .top__md .is-col:first-child {
+        width: 100%; }
+    .page-footer .margBot-20, .page-footer .blogs-item__head, .page-footer .blogs-item__title {
+      margin-bottom: 0; }
+    .page-footer .page-footer__bottom {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .page-footer .page-footer__bottom .bottom__xs .is-col:first-child {
+      margin-bottom: 20px; } }
 
 .footer-title {
   font-size: 11px;
@@ -2692,7 +2706,8 @@ button.close {
   background-color: #fff; }
   @media screen and (min-width: 768px) {
     .page-header {
-      position: static; } }
+      position: static;
+      border-bottom: none; } }
   .page-header__inner {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2818,6 +2833,11 @@ button.close {
 
 .mainSlider {
   color: #fff; }
+  @media screen and (max-width: 767px) {
+    .mainSlider .middleCenteredFlex, .mainSlider .swiper-link, .mainSlider .swiper-center, .mainSlider .scroll-me {
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap; } }
   @media screen and (min-width: 1300px) {
     .mainSlider .swiper-container,
     .mainSlider .swiper-wrapper,
@@ -2861,17 +2881,19 @@ button.close {
     @media screen and (max-width: 767px) {
       .mainSlider .swiper-slide {
         padding: 30px 0;
-        min-height: 420px; } }
+        height: 500px; } }
     @media screen and (max-width: 767px) {
       .mainSlider .swiper-slide--sec img {
         bottom: -9% !important; } }
   .mainSlider .swiper-settings {
     width: 100%; }
     .mainSlider .swiper-settings .swiper-link img {
+      width: 66px;
       height: 70px; }
       @media screen and (max-width: 767px) {
         .mainSlider .swiper-settings .swiper-link img {
-          height: 55px; } }
+          height: 55px;
+          width: auto; } }
     @media screen and (min-width: 768px) {
       .mainSlider .swiper-settings {
         position: absolute;
@@ -2895,7 +2917,7 @@ button.close {
            -moz-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; }
-        .mainSlider .swiper-link div {
+        .mainSlider .swiper-link div:last-child {
           width: 50%; } }
     .mainSlider .swiper-link:hover {
       background-color: #a6c42a; }
@@ -2986,12 +3008,14 @@ button.close {
           height: 370px; } }
     .mainHits-item_img img {
       position: absolute;
-      left: 30%;
+      right: -15%;
+      left: auto;
       top: 0;
-      height: 280px; }
+      height: 250px; }
       @media screen and (min-width: 768px) {
         .mainHits-item_img img {
           height: auto;
+          right: auto;
           left: 12%;
           max-width: inherit; } }
       @media screen and (min-width: 1300px) {
@@ -3002,11 +3026,6 @@ button.close {
       @media screen and (min-width: 768px) {
         .mainHits-item_img--he {
           margin-top: 0; } }
-      .mainHits-item_img--he img {
-        left: 20%; }
-        @media screen and (min-width: 768px) {
-          .mainHits-item_img--he img {
-            left: 12%; } }
     .mainHits-item > div {
       position: relative;
       z-index: 1; }
@@ -3198,6 +3217,11 @@ button.close {
     overflow: hidden;
     padding-left: 15px;
     margin-left: -15px; }
+    .mainReview-inner .swiper-review {
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        .mainReview-inner .swiper-review {
+          overflow: visible; } }
     .mainReview-inner .margTop-40 {
       margin-top: 0; }
       @media screen and (min-width: 768px) {
@@ -3224,8 +3248,10 @@ button.close {
   .mainReview .watchMark {
     position: absolute;
     top: 40px;
-    left: -20px;
     z-index: 1; }
+    @media screen and (min-width: 768px) {
+      .mainReview .watchMark {
+        left: -20px; } }
     .mainReview .watchMark img {
       height: 50px; }
       @media screen and (min-width: 768px) {
@@ -3237,20 +3263,27 @@ button.close {
   .mainReview--txt {
     z-index: 9; }
     .mainReview--txt img {
-      opacity: 0; }
+      opacity: 0;
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .mainReview--txt img {
+          display: block; } }
     .mainReview--txt:before {
       top: 4px;
       background-color: #fff !important; }
     .mainReview--txt .mainReview-info {
       background: url("../images/icons/quote-mark.svg") no-repeat center right; }
   .mainReview-text {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
     background-color: #f4f4f4;
-    padding: 43px 40px;
+    padding: 15px;
     border-top: 4px solid #05a541; }
+    @media screen and (min-width: 768px) {
+      .mainReview-text {
+        padding: 43px 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0; } }
   .mainReview .swiper-settings {
     position: absolute;
     right: 0;
@@ -4469,7 +4502,9 @@ hr {
 
 @media screen and (max-width: 767px) {
   .benefitsComp .margBot-80 {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+    .benefitsComp .margBot-80:last-child {
+      margin-bottom: 20px; } }
 
 @media screen and (min-width: 1300px) {
   .benefitsComp {

@@ -133,18 +133,19 @@ $(document).ready(function () {
 		breakpoints: {
 			767: {
 				slidesPerView: 1,
-				spaceBetween: 0
+				spaceBetween: 0,
+				touchRatio: 1
 			}
 		}
 	});
 	var swiperSert = new Swiper('.swiper-sert', {
 		slidesPerView: 4,
-		preventClicksPropagation: false,
-		preventClicks: false,
-		touchRatio: 0,
 		spaceBetween: 10,
 		speed: 500,
 		autoHeight: true,
+		touchRatio: 0,
+		preventClicksPropagation: false,
+		preventClicks: false,
 		navigation: {
 			nextEl: '.swiper-btnS-next',
 			prevEl: '.swiper-btnS-prev'
@@ -152,11 +153,13 @@ $(document).ready(function () {
 		breakpoints: {
 			767: {
 				slidesPerView: 'auto',
-				centeredSlides: true
+				centeredSlides: true,
+				touchRatio: 1
 			},
 			1300: {
 				slidesPerView: 3,
-				spaceBetween: 0
+				spaceBetween: 0,
+				touchRatio: 0
 			}
 		}
 	});
