@@ -1003,13 +1003,15 @@ select.control, .select2-container--default select.select2-selection--single {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  height: 40px;
   padding: 5px 30px 5px 15px;
   border: 1px solid #e1e1e1;
-  background: url("../images/icons/arrow-down.png") no-repeat center right 10px, #fff;
-  margin-bottom: 20px;
-  height: 45px; }
+  background: url("../images/icons/arrow-down.png") no-repeat center right 10px, #fff; }
   select.control:focus, .select2-container--default select.select2-selection--single:focus {
     background: url("../images/icons/arrow-up.png") no-repeat center right 10px, #fff; }
+  @media screen and (min-width: 768px) {
+    select.control, .select2-container--default select.select2-selection--single {
+      height: 60px; } }
 
 input[type="search"] {
   -webkit-appearance: none; }
@@ -1073,26 +1075,11 @@ input[type="search"] {
 .checkbox + .checkbox {
   margin-top: 20px; }
 
-.radio--inline,
-.checkbox--inline {
-  position: relative;
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-  vertical-align: middle;
-  font-weight: normal;
-  cursor: pointer; }
-
-.radio--inline + .radio--inline,
-.checkbox--inline + .checkbox--inline {
-  margin-top: 0;
-  margin-left: 10px; }
-
 .file_upload {
   position: relative;
   overflow: hidden;
   font-size: 1em;
-  height: 45px;
+  height: 40px;
   border: 1px dotted #a8a8a8;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1449,11 +1436,11 @@ a.text--danger:focus {
   color: #de3030; }
 
 .text--grey {
-  color: #eaeaea; }
+  color: #aaaaa9; }
 
 a.text--grey:hover,
 a.text--grey:focus {
-  color: #d1d1d1; }
+  color: #91918f; }
 
 .text--white {
   color: #fff; }
@@ -1468,6 +1455,10 @@ a.text--white:focus {
 a.text--dgrey:hover,
 a.text--dgrey:focus {
   color: #858585; }
+
+.regular {
+  font-weight: 300;
+  font-family: 'geometriaRegular'; }
 
 ul,
 ol {
@@ -3262,10 +3253,16 @@ button.close {
         top: 80px; } }
   .mainReview--txt {
     z-index: 9; }
+    @media screen and (min-width: 768px) {
+      .mainReview--txt {
+        width: 99%; } }
+    @media screen and (min-width: 992px) {
+      .mainReview--txt {
+        width: auto; } }
     .mainReview--txt img {
       opacity: 0;
       display: none; }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 992px) {
         .mainReview--txt img {
           display: block; } }
     .mainReview--txt:before {
@@ -3279,11 +3276,17 @@ button.close {
     border-top: 4px solid #05a541; }
     @media screen and (min-width: 768px) {
       .mainReview-text {
-        padding: 43px 40px;
+        padding: 20px; } }
+    @media screen and (min-width: 992px) {
+      .mainReview-text {
+        padding: 18px;
         position: absolute;
         left: 0;
         top: 0;
         right: 0; } }
+    @media screen and (min-width: 1300px) {
+      .mainReview-text {
+        padding: 43px 40px; } }
   .mainReview .swiper-settings {
     position: absolute;
     right: 0;
@@ -5563,3 +5566,24 @@ button {
     background-image: linear-gradient(-260deg, #46d17a 0%, #05a541 100%); }
   .rabgeSlider .noUi-horizontal .noUi-handle {
     top: -12px; }
+
+@media screen and (min-width: 768px) {
+  .reviewsPage .mainReview {
+    padding-top: 0;
+    padding-bottom: 40px; } }
+
+.reviewsPage-item {
+  margin-bottom: 20px; }
+  @media screen and (max-width: 767px) {
+    .reviewsPage-item {
+      margin-bottom: 10px; } }
+
+.filterBlock {
+  background: #f4f4f4; }
+  .filterBlock .mainTitle {
+    background: url("../images/icons/search-g.svg") no-repeat right top 14px; }
+  .filterBlock hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: #d9d9d9; }
