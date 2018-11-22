@@ -85,26 +85,8 @@
       margin: 2px 30px 0; } }
 
 .addLoader .progress__value {
-  stroke-dasharray: 200;
-  stroke-dashoffset: 200; }
-
-@-webkit-keyframes progress {
-  0% {
-    stroke-dashoffset: 100; }
-  100% {
-    stroke-dashoffset: 0; } }
-
-@-moz-keyframes progress {
-  0% {
-    stroke-dashoffset: 100; }
-  100% {
-    stroke-dashoffset: 0; } }
-
-@keyframes progress {
-  0% {
-    stroke-dashoffset: 100; }
-  100% {
-    stroke-dashoffset: 0; } }
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400; }
 
 .is-icons--arrow-prev:before, .is-icons--pdf:before, .is-icons--laptop:before, .is-icons--phone:before, .is-icons--mail:before, .is-icons--location:before, .is-icons--phone2:before, .is-icons--plus:before, .accordion-header:before, .is-icons--minus:before, .accordion-header.active:before, .is-icons--mouse:before, .is-icons--mouse-bl:before, .is-icons--attach:before, .is-icons--attach-wh:before, .is-icons--paper-plane:before, .is-icons--slide-1:before, .is-icons--slide-2:before, .is-icons--slide-3:before, .is-icons--slide-4:before, .is-icons--card-1:before, .is-icons--card-2:before, .is-icons--card-3:before, .is-icons--card-4:before, .is-icons--card-5:before, .is-icons--card-6:before, .is-icons--edit-6:before, .is-icons--edit-5:before, .is-icons--ben-1:before, .is-icons--ben-2:before, .is-icons--ben-3:before, .is-icons--ben-4:before, .is-icons--ben-5:before, .is-icons--ben-6:before, .is-icons--ben-7:before, .is-icons--ben-8:before, .is-icons--ben-9:before, .is-icons--ben-10:before, .is-icons--ben-11:before, .is-icons--about-1:before, .is-icons--about-2:before, .is-icons--about-3:before, .is-icons--about-4:before, .is-icons--about-5:before, .is-icons--about-6:before, .is-icons--about-7:before, .is-icons--about-8:before, .is-icons--about-9:before, .is-icons--dealLIne-1:before, .is-icons--dealLIne-2:before, .is-icons--dealLIne-3:before, .is-icons--dealLIne-4:before, .is-icons--dealer-1:before, .is-icons--dealer-2:before, .is-icons--dealer-3:before, .is-icons--dealer-4:before, .is-icons--dealer-5:before, .is-icons--dealer-6:before, .is-icons--dealer-7:before, .is-icons--dealer-8:before, .is-icons--dealer-9:before {
   background-image: url("../images/svg/sprite.svg");
@@ -473,7 +455,7 @@
   background: #a6c42a; }
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, .filterBlock .page-search .control, .filterBlock .page-search .select2-container--default .select2-selection--single, .select2-container--default .filterBlock .page-search .select2-selection--single, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -1143,12 +1125,15 @@ input[type="search"] {
     max-width: 100%; }
   p,
   h2,
+  .filterBlock .page-search .control,
+  .filterBlock .page-search .select2-container--default .select2-selection--single,
+  .select2-container--default .filterBlock .page-search .select2-selection--single,
   h3 {
     orphans: 3;
     widows: 3; }
   h1 {
     margin-top: 3rem; }
-  h1, h2, h3 {
+  h1, h2, .filterBlock .page-search .control, .filterBlock .page-search .select2-container--default .select2-selection--single, .select2-container--default .filterBlock .page-search .select2-selection--single, h3 {
     page-break-after: avoid; }
   .button,
   svg {
@@ -1256,22 +1241,25 @@ caption {
         font-size: 12px;
         display: block; } }
 
-h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta, .epsilon, .zeta {
+h1, h2, .filterBlock .page-search .control, .filterBlock .page-search .select2-container--default .select2-selection--single, .select2-container--default .filterBlock .page-search .select2-selection--single, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta, .epsilon, .zeta {
   font-family: "geometriaBold", Arial, sans-serif;
   font-weight: 900;
   line-height: 1.2;
   color: inherit; }
-  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .alpha small, .beta small, .gamma small, .delta small, .epsilon small, .zeta small {
+  h1 small, h2 small, .filterBlock .page-search .control small, .filterBlock .page-search .select2-container--default .select2-selection--single small, .select2-container--default .filterBlock .page-search .select2-selection--single small, h3 small, h4 small, h5 small, h6 small, .alpha small, .beta small, .gamma small, .delta small, .epsilon small, .zeta small {
     font-weight: normal;
     line-height: 1; }
 
 h1,
 h2,
+.filterBlock .page-search .control,
+.filterBlock .page-search .select2-container--default .select2-selection--single,
+.select2-container--default .filterBlock .page-search .select2-selection--single,
 h3 {
   margin-top: 23px;
   margin-bottom: 11px; }
   h1 small,
-  h2 small,
+  h2 small, .filterBlock .page-search .control small, .filterBlock .page-search .select2-container--default .select2-selection--single small, .select2-container--default .filterBlock .page-search .select2-selection--single small,
   h3 small {
     font-size: 65%; }
 
@@ -1291,10 +1279,10 @@ h1, .alpha {
     h1, .alpha {
       font-size: 50px; } }
 
-h2, .beta {
+h2, .filterBlock .page-search .control, .filterBlock .page-search .select2-container--default .select2-selection--single, .select2-container--default .filterBlock .page-search .select2-selection--single, .beta {
   font-size: 18px; }
   @media screen and (min-width: 768px) {
-    h2, .beta {
+    h2, .filterBlock .page-search .control, .filterBlock .page-search .select2-container--default .select2-selection--single, .select2-container--default .filterBlock .page-search .select2-selection--single, .beta {
       font-size: 35px; } }
 
 h3, .gamma {
@@ -2255,7 +2243,7 @@ blockquote {
 .padBot-20 {
   padding-bottom: 20px; }
 
-.padTop-30, .mainBenefits h2 {
+.padTop-30, .mainBenefits h2, .mainBenefits .filterBlock .page-search .control, .filterBlock .page-search .mainBenefits .control, .mainBenefits .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainBenefits .select2-selection--single, .mainBenefits .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainBenefits .select2-selection--single {
   padding-top: 30px; }
 
 .padBot-30 {
@@ -2327,7 +2315,7 @@ blockquote {
 .margTop-30, .mainSlider .btn--outlined {
   margin-top: 30px; }
 
-.margBot-40, .mainSlider h5, .mainSert h2 {
+.margBot-40, .mainSlider h5, .mainSert h2, .mainSert .filterBlock .page-search .control, .filterBlock .page-search .mainSert .control, .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single {
   margin-bottom: 40px; }
 
 .margTop-40 {
@@ -2380,12 +2368,12 @@ ul.tabs {
   @media screen and (min-width: 768px) {
     ul.tabs {
       margin-bottom: 0; } }
-  ul.tabs h2, ul.tabs .beta {
+  ul.tabs h2, ul.tabs .filterBlock .page-search .control, .filterBlock .page-search ul.tabs .control, ul.tabs .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default ul.tabs .select2-selection--single, ul.tabs .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search ul.tabs .select2-selection--single, ul.tabs .beta {
     font-family: 'geometriaRegular';
     border-bottom: 3px solid transparent;
     margin-bottom: 0;
     padding-bottom: 10px; }
-  ul.tabs .current h2, ul.tabs .current .beta {
+  ul.tabs .current h2, ul.tabs .current .filterBlock .page-search .control, .filterBlock .page-search ul.tabs .current .control, ul.tabs .current .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default ul.tabs .current .select2-selection--single, ul.tabs .current .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search ul.tabs .current .select2-selection--single, ul.tabs .current .beta {
     font-family: 'geometriaBold';
     color: #05a541;
     border-color: #05a541; }
@@ -2972,8 +2960,12 @@ button.close {
   .mainHits-item {
     position: relative; }
     @media screen and (max-width: 767px) {
-      .mainHits-item .margBot-100 {
-        margin-bottom: 30px; } }
+      .mainHits-item {
+        margin-bottom: 20px; }
+        .mainHits-item .padTop-30, .mainHits-item .mainBenefits h2, .mainBenefits .mainHits-item h2, .mainHits-item .mainBenefits .filterBlock .page-search .control, .mainBenefits .filterBlock .page-search .mainHits-item .control, .mainHits-item .filterBlock .page-search .mainBenefits .control, .filterBlock .page-search .mainBenefits .mainHits-item .control, .mainHits-item .mainBenefits .filterBlock .page-search .select2-container--default .select2-selection--single, .mainBenefits .filterBlock .page-search .select2-container--default .mainHits-item .select2-selection--single, .mainHits-item .filterBlock .page-search .select2-container--default .mainBenefits .select2-selection--single, .filterBlock .page-search .select2-container--default .mainBenefits .mainHits-item .select2-selection--single, .mainHits-item .mainBenefits .select2-container--default .filterBlock .page-search .select2-selection--single, .mainBenefits .select2-container--default .filterBlock .page-search .mainHits-item .select2-selection--single, .mainHits-item .select2-container--default .filterBlock .page-search .mainBenefits .select2-selection--single, .select2-container--default .filterBlock .page-search .mainBenefits .mainHits-item .select2-selection--single {
+          padding-top: 0; }
+        .mainHits-item .margBot-100 {
+          margin-bottom: 30px; } }
     @media screen and (min-width: 768px) {
       .mainHits-item {
         height: 450px; } }
@@ -3026,10 +3018,10 @@ button.close {
   @media screen and (min-width: 768px) {
     .mainServices {
       padding: 80px 0; } }
-  .mainServices h2 {
+  .mainServices h2, .mainServices .filterBlock .page-search .control, .filterBlock .page-search .mainServices .control, .mainServices .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainServices .select2-selection--single, .mainServices .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainServices .select2-selection--single {
     margin-bottom: 30px; }
     @media screen and (min-width: 768px) {
-      .mainServices h2 {
+      .mainServices h2, .mainServices .filterBlock .page-search .control, .filterBlock .page-search .mainServices .control, .mainServices .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainServices .select2-selection--single, .mainServices .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainServices .select2-selection--single {
         margin-bottom: 80px; } }
   .mainServices-num {
     color: #eaeaea;
@@ -3117,13 +3109,13 @@ button.close {
   .mainBenefits {
     padding: 80px 0; } }
 
-.mainBenefits h2 {
+.mainBenefits h2, .mainBenefits .filterBlock .page-search .control, .filterBlock .page-search .mainBenefits .control, .mainBenefits .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainBenefits .select2-selection--single, .mainBenefits .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainBenefits .select2-selection--single {
   margin-bottom: 30px; }
   @media screen and (min-width: 768px) {
-    .mainBenefits h2 {
+    .mainBenefits h2, .mainBenefits .filterBlock .page-search .control, .filterBlock .page-search .mainBenefits .control, .mainBenefits .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainBenefits .select2-selection--single, .mainBenefits .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainBenefits .select2-selection--single {
       margin-bottom: 40px; } }
   @media screen and (min-width: 1690px) {
-    .mainBenefits h2 {
+    .mainBenefits h2, .mainBenefits .filterBlock .page-search .control, .filterBlock .page-search .mainBenefits .control, .mainBenefits .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainBenefits .select2-selection--single, .mainBenefits .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainBenefits .select2-selection--single {
       margin-bottom: 80px; } }
 
 .mainBenefits .scrollme-inner {
@@ -3185,10 +3177,10 @@ button.close {
     @media screen and (min-width: 768px) {
       .mainReview .btn--full {
         margin-bottom: 0; } }
-  .mainReview h2 {
+  .mainReview h2, .mainReview .filterBlock .page-search .control, .filterBlock .page-search .mainReview .control, .mainReview .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainReview .select2-selection--single, .mainReview .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainReview .select2-selection--single {
     margin-bottom: 30px; }
     @media screen and (min-width: 768px) {
-      .mainReview h2 {
+      .mainReview h2, .mainReview .filterBlock .page-search .control, .filterBlock .page-search .mainReview .control, .mainReview .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainReview .select2-selection--single, .mainReview .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainReview .select2-selection--single {
         margin-bottom: 80px; } }
   .mainReview .swiper-slide > div:before {
     counter-increment: myCounter;
@@ -3315,10 +3307,10 @@ button.close {
   @media screen and (min-width: 768px) {
     .mainBlogs {
       padding: 60px 0; } }
-  .mainBlogs h2 {
+  .mainBlogs h2, .mainBlogs .filterBlock .page-search .control, .filterBlock .page-search .mainBlogs .control, .mainBlogs .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainBlogs .select2-selection--single, .mainBlogs .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainBlogs .select2-selection--single {
     margin-bottom: 30px; }
     @media screen and (min-width: 768px) {
-      .mainBlogs h2 {
+      .mainBlogs h2, .mainBlogs .filterBlock .page-search .control, .filterBlock .page-search .mainBlogs .control, .mainBlogs .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainBlogs .select2-selection--single, .mainBlogs .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainBlogs .select2-selection--single {
         margin-bottom: 80px; } }
   .mainBlogs .margTop-60 {
     margin-top: 30px; }
@@ -3331,10 +3323,10 @@ button.close {
   @media screen and (min-width: 1300px) {
     .mainSign {
       padding: 60px 0; } }
-  .mainSign h2 {
+  .mainSign h2, .mainSign .filterBlock .page-search .control, .filterBlock .page-search .mainSign .control, .mainSign .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSign .select2-selection--single, .mainSign .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSign .select2-selection--single {
     margin-bottom: 60px; }
     @media screen and (max-width: 767px) {
-      .mainSign h2 {
+      .mainSign h2, .mainSign .filterBlock .page-search .control, .filterBlock .page-search .mainSign .control, .mainSign .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSign .select2-selection--single, .mainSign .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSign .select2-selection--single {
         margin-bottom: 30px; } }
   .mainSign form {
     display: -webkit-box;
@@ -3488,12 +3480,12 @@ button.close {
   @media screen and (min-width: 1300px) {
     .mainForm {
       padding: 80px 0 120px; } }
-  .mainForm h2 {
+  .mainForm h2, .mainForm .filterBlock .page-search .control, .filterBlock .page-search .mainForm .control, .mainForm .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainForm .select2-selection--single, .mainForm .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainForm .select2-selection--single {
     margin-top: 0;
     margin-bottom: 15px;
     color: #fff; }
     @media screen and (min-width: 768px) {
-      .mainForm h2 {
+      .mainForm h2, .mainForm .filterBlock .page-search .control, .filterBlock .page-search .mainForm .control, .mainForm .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainForm .select2-selection--single, .mainForm .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainForm .select2-selection--single {
         margin-bottom: 30px; } }
   .mainForm form {
     background-color: #05a541;
@@ -3533,10 +3525,10 @@ button.close {
     left: 50%;
     top: 27%;
     z-index: 0; }
-  .mainForm .margBot-40, .mainForm .mainSlider h5, .mainSlider .mainForm h5, .mainForm .mainSert h2, .mainSert .mainForm h2 {
+  .mainForm .margBot-40, .mainForm .mainSlider h5, .mainSlider .mainForm h5, .mainForm .mainSert h2, .mainSert .mainForm h2, .mainForm .mainSert .filterBlock .page-search .control, .mainSert .filterBlock .page-search .mainForm .control, .mainForm .filterBlock .page-search .mainSert .control, .filterBlock .page-search .mainSert .mainForm .control, .mainForm .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .mainSert .filterBlock .page-search .select2-container--default .mainForm .select2-selection--single, .mainForm .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .mainForm .select2-selection--single, .mainForm .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .mainForm .select2-selection--single, .mainForm .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .mainForm .select2-selection--single {
     margin-bottom: 40px; }
     @media screen and (max-width: 767px) {
-      .mainForm .margBot-40, .mainForm .mainSlider h5, .mainSlider .mainForm h5, .mainForm .mainSert h2, .mainSert .mainForm h2 {
+      .mainForm .margBot-40, .mainForm .mainSlider h5, .mainSlider .mainForm h5, .mainForm .mainSert h2, .mainSert .mainForm h2, .mainForm .mainSert .filterBlock .page-search .control, .mainSert .filterBlock .page-search .mainForm .control, .mainForm .filterBlock .page-search .mainSert .control, .filterBlock .page-search .mainSert .mainForm .control, .mainForm .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .mainSert .filterBlock .page-search .select2-container--default .mainForm .select2-selection--single, .mainForm .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .mainForm .select2-selection--single, .mainForm .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .mainForm .select2-selection--single, .mainForm .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .mainForm .select2-selection--single {
         margin-bottom: 20px; } }
   .mainForm-img-1 {
     position: absolute;
@@ -3609,7 +3601,8 @@ button.close {
         top: 10px; } }
 
 .aboutInfo {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  overflow: hidden; }
   .aboutInfo-back {
     position: absolute;
     bottom: 10%;
@@ -3657,10 +3650,10 @@ button.close {
   @media screen and (min-width: 1300px) {
     .aboutBio {
       padding: 80px 80px 40px 100px; } }
-  .aboutBio .margBot-40, .aboutBio .mainSlider h5, .mainSlider .aboutBio h5, .aboutBio .mainSert h2, .mainSert .aboutBio h2 {
+  .aboutBio .margBot-40, .aboutBio .mainSlider h5, .mainSlider .aboutBio h5, .aboutBio .mainSert h2, .mainSert .aboutBio h2, .aboutBio .mainSert .filterBlock .page-search .control, .mainSert .filterBlock .page-search .aboutBio .control, .aboutBio .filterBlock .page-search .mainSert .control, .filterBlock .page-search .mainSert .aboutBio .control, .aboutBio .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .mainSert .filterBlock .page-search .select2-container--default .aboutBio .select2-selection--single, .aboutBio .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .aboutBio .select2-selection--single, .aboutBio .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .aboutBio .select2-selection--single, .aboutBio .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .aboutBio .select2-selection--single {
     margin-bottom: 20px; }
     @media screen and (min-width: 768px) {
-      .aboutBio .margBot-40, .aboutBio .mainSlider h5, .mainSlider .aboutBio h5, .aboutBio .mainSert h2, .mainSert .aboutBio h2 {
+      .aboutBio .margBot-40, .aboutBio .mainSlider h5, .mainSlider .aboutBio h5, .aboutBio .mainSert h2, .mainSert .aboutBio h2, .aboutBio .mainSert .filterBlock .page-search .control, .mainSert .filterBlock .page-search .aboutBio .control, .aboutBio .filterBlock .page-search .mainSert .control, .filterBlock .page-search .mainSert .aboutBio .control, .aboutBio .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .mainSert .filterBlock .page-search .select2-container--default .aboutBio .select2-selection--single, .aboutBio .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .aboutBio .select2-selection--single, .aboutBio .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .aboutBio .select2-selection--single, .aboutBio .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .aboutBio .select2-selection--single {
         margin-bottom: 40px; } }
   .aboutBio h3 {
     line-height: 1.5;
@@ -3798,7 +3791,13 @@ button.close {
 
 .aboutBack {
   padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #fff; }
+  @media screen and (min-width: 768px) {
+    .aboutBack {
+      padding-left: 0;
+      padding-right: 0; } }
   .aboutBack .margBot-70 {
     margin-bottom: 30px; }
   @media screen and (min-width: 768px) {
@@ -3841,6 +3840,19 @@ button.close {
       .aboutImg .contentAbout {
         width: 410px;
         padding: 40px 60px; } }
+  @media screen and (max-width: 767px) {
+    .aboutImg--right > * {
+      position: relative;
+      z-index: 1; }
+    .aboutImg--right:after {
+      content: '';
+      background-color: #fff;
+      left: -10px;
+      right: -10px;
+      position: absolute;
+      top: 100px;
+      z-index: 0;
+      height: 100%; } }
   @media screen and (min-width: 768px) {
     .aboutImg--right {
       bottom: -100px;
@@ -4276,28 +4288,64 @@ button.close {
     .cardMod,
     .cardBen {
       margin: 80px 0; } }
-  .cardMod h2,
-  .cardBen h2 {
+  .cardMod h2, .cardMod .filterBlock .page-search .control, .filterBlock .page-search .cardMod .control, .cardMod .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .cardMod .select2-selection--single, .cardMod .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .cardMod .select2-selection--single,
+  .cardBen h2,
+  .cardBen .filterBlock .page-search .control, .filterBlock .page-search
+  .cardBen .control,
+  .cardBen .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default
+  .cardBen .select2-selection--single,
+  .cardBen .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search
+  .cardBen .select2-selection--single {
     margin-top: 0;
     margin-bottom: 30px; }
     @media screen and (min-width: 768px) {
-      .cardMod h2,
-      .cardBen h2 {
+      .cardMod h2, .cardMod .filterBlock .page-search .control, .filterBlock .page-search .cardMod .control, .cardMod .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .cardMod .select2-selection--single, .cardMod .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .cardMod .select2-selection--single,
+      .cardBen h2,
+      .cardBen .filterBlock .page-search .control, .filterBlock .page-search
+      .cardBen .control,
+      .cardBen .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default
+      .cardBen .select2-selection--single,
+      .cardBen .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search
+      .cardBen .select2-selection--single {
         margin-bottom: 60px; } }
-  .cardMod .margBot-40, .cardMod .mainSlider h5, .mainSlider .cardMod h5, .cardMod .mainSert h2, .mainSert .cardMod h2,
+  .cardMod .margBot-40, .cardMod .mainSlider h5, .mainSlider .cardMod h5, .cardMod .mainSert h2, .mainSert .cardMod h2, .cardMod .mainSert .filterBlock .page-search .control, .mainSert .filterBlock .page-search .cardMod .control, .cardMod .filterBlock .page-search .mainSert .control, .filterBlock .page-search .mainSert .cardMod .control, .cardMod .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .mainSert .filterBlock .page-search .select2-container--default .cardMod .select2-selection--single, .cardMod .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .cardMod .select2-selection--single, .cardMod .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .cardMod .select2-selection--single, .cardMod .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .cardMod .select2-selection--single,
   .cardBen .margBot-40,
   .cardBen .mainSlider h5, .mainSlider
   .cardBen h5,
   .cardBen .mainSert h2, .mainSert
-  .cardBen h2 {
+  .cardBen h2,
+  .cardBen .mainSert .filterBlock .page-search .control, .mainSert .filterBlock .page-search
+  .cardBen .control,
+  .cardBen .filterBlock .page-search .mainSert .control, .filterBlock .page-search .mainSert
+  .cardBen .control,
+  .cardBen .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .mainSert .filterBlock .page-search .select2-container--default
+  .cardBen .select2-selection--single,
+  .cardBen .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert
+  .cardBen .select2-selection--single,
+  .cardBen .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search
+  .cardBen .select2-selection--single,
+  .cardBen .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert
+  .cardBen .select2-selection--single {
     margin-bottom: 10px; }
     @media screen and (min-width: 768px) {
-      .cardMod .margBot-40, .cardMod .mainSlider h5, .mainSlider .cardMod h5, .cardMod .mainSert h2, .mainSert .cardMod h2,
+      .cardMod .margBot-40, .cardMod .mainSlider h5, .mainSlider .cardMod h5, .cardMod .mainSert h2, .mainSert .cardMod h2, .cardMod .mainSert .filterBlock .page-search .control, .mainSert .filterBlock .page-search .cardMod .control, .cardMod .filterBlock .page-search .mainSert .control, .filterBlock .page-search .mainSert .cardMod .control, .cardMod .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .mainSert .filterBlock .page-search .select2-container--default .cardMod .select2-selection--single, .cardMod .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .cardMod .select2-selection--single, .cardMod .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .cardMod .select2-selection--single, .cardMod .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .cardMod .select2-selection--single,
       .cardBen .margBot-40,
       .cardBen .mainSlider h5, .mainSlider
       .cardBen h5,
       .cardBen .mainSert h2, .mainSert
-      .cardBen h2 {
+      .cardBen h2,
+      .cardBen .mainSert .filterBlock .page-search .control, .mainSert .filterBlock .page-search
+      .cardBen .control,
+      .cardBen .filterBlock .page-search .mainSert .control, .filterBlock .page-search .mainSert
+      .cardBen .control,
+      .cardBen .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .mainSert .filterBlock .page-search .select2-container--default
+      .cardBen .select2-selection--single,
+      .cardBen .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert
+      .cardBen .select2-selection--single,
+      .cardBen .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search
+      .cardBen .select2-selection--single,
+      .cardBen .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert
+      .cardBen .select2-selection--single {
         margin-bottom: 40px; } }
 
 .cardSert {
@@ -4356,10 +4404,10 @@ button.close {
 .cardBlogs {
   position: relative;
   z-index: 1; }
-  .cardBlogs h2 {
+  .cardBlogs h2, .cardBlogs .filterBlock .page-search .control, .filterBlock .page-search .cardBlogs .control, .cardBlogs .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .cardBlogs .select2-selection--single, .cardBlogs .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .cardBlogs .select2-selection--single {
     margin-bottom: 20px; }
     @media screen and (min-width: 768px) {
-      .cardBlogs h2 {
+      .cardBlogs h2, .cardBlogs .filterBlock .page-search .control, .filterBlock .page-search .cardBlogs .control, .cardBlogs .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .cardBlogs .select2-selection--single, .cardBlogs .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .cardBlogs .select2-selection--single {
         margin-bottom: 70px; } }
 
 @media screen and (min-width: 1300px) {
@@ -4826,10 +4874,10 @@ button {
   @media screen and (min-width: 1300px) {
     .dealerPage-contacts {
       margin-bottom: 100px; } }
-  .dealerPage-contacts h2 {
+  .dealerPage-contacts h2, .dealerPage-contacts .filterBlock .page-search .control, .filterBlock .page-search .dealerPage-contacts .control, .dealerPage-contacts .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .dealerPage-contacts .select2-selection--single, .dealerPage-contacts .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .dealerPage-contacts .select2-selection--single {
     margin-bottom: 20px; }
     @media screen and (min-width: 768px) {
-      .dealerPage-contacts h2 {
+      .dealerPage-contacts h2, .dealerPage-contacts .filterBlock .page-search .control, .filterBlock .page-search .dealerPage-contacts .control, .dealerPage-contacts .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .dealerPage-contacts .select2-selection--single, .dealerPage-contacts .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .dealerPage-contacts .select2-selection--single {
         margin-bottom: 60px; } }
   .dealerPage-contacts__inner {
     padding: 20px;
@@ -4905,10 +4953,10 @@ button {
 .questionsPage .tab-content {
   margin-bottom: 100px; }
 
-.questionsPage .margBot-40, .questionsPage .mainSlider h5, .mainSlider .questionsPage h5, .questionsPage .mainSert h2, .mainSert .questionsPage h2 {
+.questionsPage .margBot-40, .questionsPage .mainSlider h5, .mainSlider .questionsPage h5, .questionsPage .mainSert h2, .mainSert .questionsPage h2, .questionsPage .mainSert .filterBlock .page-search .control, .mainSert .filterBlock .page-search .questionsPage .control, .questionsPage .filterBlock .page-search .mainSert .control, .filterBlock .page-search .mainSert .questionsPage .control, .questionsPage .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .mainSert .filterBlock .page-search .select2-container--default .questionsPage .select2-selection--single, .questionsPage .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .questionsPage .select2-selection--single, .questionsPage .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .questionsPage .select2-selection--single, .questionsPage .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .questionsPage .select2-selection--single {
   margin-bottom: 0; }
   @media screen and (min-width: 768px) {
-    .questionsPage .margBot-40, .questionsPage .mainSlider h5, .mainSlider .questionsPage h5, .questionsPage .mainSert h2, .mainSert .questionsPage h2 {
+    .questionsPage .margBot-40, .questionsPage .mainSlider h5, .mainSlider .questionsPage h5, .questionsPage .mainSert h2, .mainSert .questionsPage h2, .questionsPage .mainSert .filterBlock .page-search .control, .mainSert .filterBlock .page-search .questionsPage .control, .questionsPage .filterBlock .page-search .mainSert .control, .filterBlock .page-search .mainSert .questionsPage .control, .questionsPage .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .mainSert .filterBlock .page-search .select2-container--default .questionsPage .select2-selection--single, .questionsPage .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .questionsPage .select2-selection--single, .questionsPage .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .questionsPage .select2-selection--single, .questionsPage .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .questionsPage .select2-selection--single {
       margin-bottom: 40px; } }
 
 .questionsPage h5 {
@@ -4924,11 +4972,11 @@ button {
   @media screen and (min-width: 1300px) {
     .questionsPage-form {
       padding: 50px 0; } }
-  .questionsPage-form h2 {
+  .questionsPage-form h2, .questionsPage-form .filterBlock .page-search .control, .filterBlock .page-search .questionsPage-form .control, .questionsPage-form .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .questionsPage-form .select2-selection--single, .questionsPage-form .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .questionsPage-form .select2-selection--single {
     margin-top: 0;
     margin-bottom: 10px; }
     @media screen and (min-width: 1300px) {
-      .questionsPage-form h2 {
+      .questionsPage-form h2, .questionsPage-form .filterBlock .page-search .control, .filterBlock .page-search .questionsPage-form .control, .questionsPage-form .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .questionsPage-form .select2-selection--single, .questionsPage-form .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .questionsPage-form .select2-selection--single {
         margin-bottom: 40px; } }
   .questionsPage-form .form__group {
     margin-bottom: 15px; }
@@ -5201,7 +5249,7 @@ button {
 .installPage-mt {
   margin-top: 6%; }
 
-.installPage-item h2 {
+.installPage-item h2, .installPage-item .filterBlock .page-search .control, .filterBlock .page-search .installPage-item .control, .installPage-item .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .installPage-item .select2-selection--single, .installPage-item .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .installPage-item .select2-selection--single {
   margin-top: 0; }
 
 .installPage .margBot-80 {
@@ -5252,7 +5300,7 @@ button {
     .installPage-grey {
       padding: 60px;
       margin-bottom: 220px; } }
-  .installPage-grey h2 {
+  .installPage-grey h2, .installPage-grey .filterBlock .page-search .control, .filterBlock .page-search .installPage-grey .control, .installPage-grey .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .installPage-grey .select2-selection--single, .installPage-grey .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .installPage-grey .select2-selection--single {
     margin-top: 0; }
   .installPage-grey:after {
     content: '';
@@ -5301,10 +5349,10 @@ button {
   @media screen and (min-width: 768px) {
     .filterBlock {
       padding: 50px 0; } }
-  .filterBlock .margBot-40, .filterBlock .mainSlider h5, .mainSlider .filterBlock h5, .filterBlock .mainSert h2, .mainSert .filterBlock h2 {
+  .filterBlock .margBot-40, .filterBlock .mainSlider h5, .mainSlider .filterBlock h5, .filterBlock .mainSert h2, .mainSert .filterBlock h2, .mainSert .filterBlock .page-search .control, .filterBlock .page-search .mainSert .control, .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single {
     margin-bottom: 10px; }
     @media screen and (min-width: 768px) {
-      .filterBlock .margBot-40, .filterBlock .mainSlider h5, .mainSlider .filterBlock h5, .filterBlock .mainSert h2, .mainSert .filterBlock h2 {
+      .filterBlock .margBot-40, .filterBlock .mainSlider h5, .mainSlider .filterBlock h5, .filterBlock .mainSert h2, .mainSert .filterBlock h2, .mainSert .filterBlock .page-search .control, .filterBlock .page-search .mainSert .control, .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single {
         margin-bottom: 40px; } }
   @media screen and (min-width: 1300px) {
     .filterBlock {
@@ -5372,10 +5420,10 @@ button {
   @media screen and (min-width: 768px) {
     .seoBlock {
       margin: 90px 0; } }
-  .seoBlock .margBot-40, .seoBlock .mainSlider h5, .mainSlider .seoBlock h5, .seoBlock .mainSert h2, .mainSert .seoBlock h2 {
+  .seoBlock .margBot-40, .seoBlock .mainSlider h5, .mainSlider .seoBlock h5, .seoBlock .mainSert h2, .mainSert .seoBlock h2, .seoBlock .mainSert .filterBlock .page-search .control, .mainSert .filterBlock .page-search .seoBlock .control, .seoBlock .filterBlock .page-search .mainSert .control, .filterBlock .page-search .mainSert .seoBlock .control, .seoBlock .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .mainSert .filterBlock .page-search .select2-container--default .seoBlock .select2-selection--single, .seoBlock .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .seoBlock .select2-selection--single, .seoBlock .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .seoBlock .select2-selection--single, .seoBlock .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .seoBlock .select2-selection--single {
     margin-bottom: 20px; }
     @media screen and (min-width: 768px) {
-      .seoBlock .margBot-40, .seoBlock .mainSlider h5, .mainSlider .seoBlock h5, .seoBlock .mainSert h2, .mainSert .seoBlock h2 {
+      .seoBlock .margBot-40, .seoBlock .mainSlider h5, .mainSlider .seoBlock h5, .seoBlock .mainSert h2, .mainSert .seoBlock h2, .seoBlock .mainSert .filterBlock .page-search .control, .mainSert .filterBlock .page-search .seoBlock .control, .seoBlock .filterBlock .page-search .mainSert .control, .filterBlock .page-search .mainSert .seoBlock .control, .seoBlock .mainSert .filterBlock .page-search .select2-container--default .select2-selection--single, .mainSert .filterBlock .page-search .select2-container--default .seoBlock .select2-selection--single, .seoBlock .filterBlock .page-search .select2-container--default .mainSert .select2-selection--single, .filterBlock .page-search .select2-container--default .mainSert .seoBlock .select2-selection--single, .seoBlock .mainSert .select2-container--default .filterBlock .page-search .select2-selection--single, .mainSert .select2-container--default .filterBlock .page-search .seoBlock .select2-selection--single, .seoBlock .select2-container--default .filterBlock .page-search .mainSert .select2-selection--single, .select2-container--default .filterBlock .page-search .mainSert .seoBlock .select2-selection--single {
         margin-bottom: 40px; } }
 
 .prodBanner {
@@ -5406,7 +5454,7 @@ button {
     .prodBanner {
       margin-top: 90px;
       padding: 30px 60px 0 100px; } }
-  .prodBanner h2 {
+  .prodBanner h2, .prodBanner .filterBlock .page-search .control, .filterBlock .page-search .prodBanner .control, .prodBanner .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .prodBanner .select2-selection--single, .prodBanner .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .prodBanner .select2-selection--single {
     margin-top: 0; }
 
 .prodSlider {
@@ -5504,7 +5552,8 @@ button {
   .prodSlider.mainSlider .swiper-center {
     left: 0; }
   .prodSlider.mainSlider .swiper-link {
-    padding-left: 0; }
+    padding-left: 0;
+    height: 115.6px; }
   .prodSlider.mainSlider .swiper-container,
   .prodSlider.mainSlider .swiper-wrapper,
   .prodSlider.mainSlider .swiper-slide {
@@ -5580,8 +5629,14 @@ button {
 
 .filterBlock {
   background: #f4f4f4; }
-  .filterBlock .mainTitle {
-    background: url("../images/icons/search-g.svg") no-repeat right top 14px; }
+  .filterBlock .page-search {
+    padding: 0;
+    position: static; }
+    .filterBlock .page-search .control, .filterBlock .page-search .select2-container--default .select2-selection--single, .select2-container--default .filterBlock .page-search .select2-selection--single {
+      background: transparent;
+      margin: 0; }
+  .filterBlock * > div {
+    margin-bottom: 20px; }
   .filterBlock hr {
     border: none;
     height: 1px;
