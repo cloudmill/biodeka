@@ -367,6 +367,10 @@
   content: '\e803'; }
 
 /* '' */
+.icon-cancel:before {
+  content: '\e804'; }
+
+/* '' */
 .icon-right:before {
   content: '\e808'; }
 
@@ -1091,6 +1095,20 @@ input[type="search"] {
     cursor: pointer; }
   .file_upload .is-icons, .file_upload .accordion-header {
     margin-right: 13px; }
+  .file_upload + .files {
+    color: #05a541;
+    display: none; }
+    .file_upload + .files.show {
+      margin-top: 10px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .file_upload + .files .files-close {
+      color: #05a541;
+      font-size: 17px;
+      cursor: pointer; }
 
 @media print {
   @page {
@@ -2864,6 +2882,8 @@ button.close {
     @media screen and (max-width: 767px) {
       .mainSlider .swiper-slide--sec img {
         bottom: -9% !important; } }
+  .mainSlider .swiper-loader {
+    height: 34px; }
   .mainSlider .swiper-settings {
     width: 100%; }
     .mainSlider .swiper-settings .swiper-link img {
@@ -3542,7 +3562,7 @@ button.close {
           height: 40px; } }
   .mainForm-img-2 {
     position: absolute;
-    bottom: -30px;
+    bottom: 30px;
     right: -30px;
     z-index: 2; }
     @media screen and (max-width: 767px) {
@@ -5112,6 +5132,8 @@ button {
   margin-right: -15px;
   color: #fff;
   background: url("../images/logo-c.png") no-repeat center right 40px, #05a541; }
+  .contactsPage-info a {
+    color: #fff; }
   @media screen and (min-width: 768px) {
     .contactsPage-info {
       margin-left: 0;
@@ -5122,7 +5144,9 @@ button {
       left: 0;
       z-index: 10;
       padding: 40px 50px 40px 30px; } }
-  .contactsPage-info .is-icons, .contactsPage-info .accordion-header {
+  .contactsPage-info .iconC,
+  .contactsPage-info .is-icons,
+  .contactsPage-info .accordion-header {
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -5178,7 +5202,6 @@ button {
       border-bottom: 2px solid transparent; }
     .wherebuyPage-list_item a:hover,
     .wherebuyPage-list_item a.active {
-      font-family: 'geometriaBold';
       border-color: #05a541;
       color: #05a541; }
 

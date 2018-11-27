@@ -3,6 +3,8 @@
 
 $(document).ready(function () {
 
+	$('.paroller').paroller();
+
 	// svg
 	function loader() {
 		var p = document.querySelector('.progress__value'),
@@ -81,15 +83,22 @@ $(document).ready(function () {
 
 	// type file
 	$(function () {
+		var container = $('.files');
+		var inner = $('.files .inner');
+		var close = $('.files-close');
 		var wrapper = $(".file_upload"),
-		    inp = wrapper.find("input"),
-		    btn = wrapper.find(".button");
+		    inp = wrapper.find("input");
 		var file_api = window.File && window.FileReader && window.FileList && window.Blob ? true : false;
+		close.click(function () {
+			$(this).prev().text('');
+			$(this).parent().removeClass('show');
+		}).click();
 		inp.change(function () {
 			var file_name = undefined;
 			if (file_api && inp[0].files[0]) file_name = inp[0].files[0].name;else file_name = inp.val().replace("C:\\fakepath\\", '');
 			if (!file_name.length) return;
-			btn.text(file_name);
+			container.addClass('show');
+			inner.text(file_name);
 		}).change();
 	});
 	// type file
@@ -460,7 +469,7 @@ function initMap() {
 		center: new google.maps.LatLng(59.943422, 30.425995),
 		zoom: 15,
 		mapTypeControl: false,
-		zoomControl: false,
+		zoomControl: true,
 		scrollwheel: false,
 		styles: mapStyles
 	};
@@ -480,7 +489,7 @@ function initMap1() {
 		zoom: 4,
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		mapTypeControl: false,
-		zoomControl: false,
+		zoomControl: true,
 		scrollwheel: false,
 		styles: [{
 			"featureType": "administrative",
