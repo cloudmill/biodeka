@@ -27,6 +27,30 @@
   </head>
   <body class="page-index"><!--[if lt IE 9]>
     <p class="browsehappy">Данный сайт построен на передовых, современных технологиях и не поддерживает Ваш браузер. Настоятельно рекомендуем выбрать и установить любой из &nbsp;<a href="http://browsehappy.com/" target="_blank">современных браузеров.</a> Это бесплатно и займет всего несколько минут.</p><![endif]-->
+    <div class="mfp-hide white-popup-block" id="modal">
+      <form method="POST" action="">
+        <h2>Оставьте заявку на консультацию</h2>
+        <div class="form__group">
+          <input class="control" type="text" placeholder="Ваш телефон" name="phone">
+        </div>
+        <div class="form__group">
+          <input class="control" type="email" placeholder="Ваш Email">
+        </div>
+        <div class="form__group">
+          <textarea class="control" placeholder="Комментарий"></textarea>
+        </div>
+        <div class="form__group margBot-40">
+          <div class="checkbox">
+            <input type="checkbox" id="item" checked>
+            <label for="item">Нажимая на кнопку Получить консультацию, Вы соглашаетесь <a href="#">с условиями обработки персональных данных</a></label>
+          </div>
+        </div>
+        <button class="btn btn--outlined btn--full btn--js" type="submit"><span>Получить консультацию</span><span class="icon-right"></span></button>
+        <button class="btn btn--outlined btn--full sent--js" style="display:none"><span>Отправить еще</span><span class="icon-right"></span></button>
+        <div class="mainForm-img-1"><img src="images/main-leaf-1.png" alt=""></div>
+        <div class="mainForm-img-2"><img src="images/main-leaf-2.png" alt=""></div>
+      </form>
+    </div>
     <div class="page-aside">
       <div class="page-logo"><a href="/"><img src="images/logo.svg" alt="Deka"></a></div>
       <div class="page-menu">
@@ -83,7 +107,7 @@
             </form>
           </div>
           <div class="page-searchm hidden__lg hidden__xl hidden__md"><img src="images/search.svg" alt=""></div><a class="page-login" href="#"><span></span>
-            <div>Личный кабинет</div></a><a class="page-click hidden__sm hidden__xs" href="#">Получить консультацию</a>
+            <div>Личный кабинет</div></a><a class="page-click hidden__sm hidden__xs popup-modal" href="#modal">Получить консультацию</a>
           <div class="hidden__lg hidden__xl">
             <nav class="nav">
               <button class="hamburger hamburger--slider hamburger--js" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>

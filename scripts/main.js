@@ -284,6 +284,9 @@ $(document).ready(function () {
 
 		fixedContentPos: false
 	});
+	$('.popup-modal').magnificPopup({
+		type: 'inline'
+	});
 	// popup
 
 	//tabs
