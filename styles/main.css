@@ -4563,7 +4563,7 @@ hr {
   margin-right: 5px;
   vertical-align: middle; }
 
-.contentable img {
+.contentable .newsPageOne img:first-child {
   width: 100%; }
 
 .contentable .video {
@@ -4841,6 +4841,9 @@ button {
     .newsPageOne .blogs-item--lg:hover .blogs-item__inner,
     .newsPage .blogs-item--lg:hover .blogs-item__inner {
       background: url("../images/leaf.svg") no-repeat left 30px bottom 30px/190px auto, #05a541; }
+  .newsPageOne .blogs-item__img + .blogs-item__inner,
+  .newsPage .blogs-item__img + .blogs-item__inner {
+    min-height: 281px; }
 
 @media screen and (min-width: 1300px) {
   .dealerPage {
