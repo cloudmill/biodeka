@@ -4938,6 +4938,8 @@ button {
     @media screen and (min-width: 768px) {
       .dealerPage-contacts h2, .dealerPage-contacts .filterBlock .page-search .control, .filterBlock .page-search .dealerPage-contacts .control, .dealerPage-contacts .filterBlock .page-search .select2-container--default .select2-selection--single, .filterBlock .page-search .select2-container--default .dealerPage-contacts .select2-selection--single, .dealerPage-contacts .select2-container--default .filterBlock .page-search .select2-selection--single, .select2-container--default .filterBlock .page-search .dealerPage-contacts .select2-selection--single {
         margin-bottom: 60px; } }
+  .dealerPage-contacts a {
+    color: #fff; }
   .dealerPage-contacts__inner {
     padding: 20px;
     position: relative;
@@ -5089,7 +5091,7 @@ button {
       color: #fff; }
   .questionsPage-form .mainForm-img-1 {
     position: absolute;
-    top: -20px;
+    bottom: -120px;
     right: -15px; }
     @media screen and (max-width: 767px) {
       .questionsPage-form .mainForm-img-1 {
@@ -5101,7 +5103,7 @@ button {
           width: auto; } }
   .questionsPage-form .mainForm-img-2 {
     position: absolute;
-    bottom: -24px;
+    bottom: -80px;
     right: -20px; }
     @media screen and (min-width: 768px) {
       .questionsPage-form .mainForm-img-2 {
