@@ -2651,14 +2651,14 @@ button.close {
     width: 100%;
     color: #fff;
     padding: 20px 10px;
-    background: url("../images/border-map.svg") no-repeat top right, #05a541; }
+    background: url("../images/mapdefault.jpg") no-repeat bottom right/cover, #05a541; }
     @media screen and (min-width: 1300px) {
       .page-footer .wherebuy-block {
         min-width: 310px;
         width: 70%;
         padding: 30px; } }
     .page-footer .wherebuy-block:hover {
-      background: url("../images/border-maph.svg") no-repeat top right, #a6c42a; }
+      background: url("../images/maphover.jpg") no-repeat bottom right/cover, #a6c42a; }
     .page-footer .wherebuy-block .footer-title {
       padding-bottom: 10px;
       margin-bottom: 10px; }
