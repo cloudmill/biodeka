@@ -2875,7 +2875,7 @@ button.close {
     .mainSlider .swiper-slide {
       height: 100% !important; } }
   @media screen and (max-width: 767px) {
-    .mainSlider .swiper-wrapper img {
+    .mainSlider .swiper-wrapper .is-col > img {
       position: absolute;
       left: 70%;
       bottom: 9%;
@@ -3053,11 +3053,11 @@ button.close {
         .mainHits-item_img img {
           height: auto;
           right: auto;
-          left: 12%;
+          left: 37%;
           max-width: inherit; } }
       @media screen and (min-width: 1300px) {
         .mainHits-item_img img {
-          left: 25%; } }
+          left: 40%; } }
     .mainHits-item_img--he {
       margin-top: 40px; }
       @media screen and (min-width: 768px) {
