@@ -298,6 +298,12 @@ $(document).ready(function () {
 
 		$(this).addClass('current');
 		$("#" + tab_id).addClass('current');
+		if ($('.wherebuyPage #tab-2').hasClass('current')) {
+			$('.mainTitle').hide();
+		} else {
+			$('.mainTitle').show();
+		}
+		$("#" + tab_id).addClass('current');
 	});
 	//tabs
 
