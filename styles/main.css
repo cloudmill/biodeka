@@ -5724,11 +5724,27 @@ button {
   background: #f4f4f4; }
   .filterBlock .page-search {
     padding: 0;
-    position: static; }
+    position: static;
+    margin-bottom: 40px; }
     .filterBlock .page-search .control, .filterBlock .page-search .select2-container--default .select2-selection--single, .select2-container--default .filterBlock .page-search .select2-selection--single {
       background: transparent;
       margin: 0; }
-  .filterBlock * > div {
+    .filterBlock .page-search-item {
+      margin-bottom: 60px; }
+      @media screen and (max-width: 767px) {
+        .filterBlock .page-search-item {
+          margin-bottom: 20px; } }
+      .filterBlock .page-search-item h3 {
+        margin-bottom: 30px; }
+        @media screen and (max-width: 767px) {
+          .filterBlock .page-search-item h3 {
+            margin-bottom: 10px; } }
+      .filterBlock .page-search-item .news .blogs-item__inner {
+        background: url("../images/leaf-wh.png") no-repeat center bottom 30px/190px auto, #fff; }
+      .filterBlock .page-search-item .news .blogs-item:hover .blogs-item__inner {
+        color: #fff;
+        background: url(../images/leaf.svg) no-repeat center bottom 30px/190px auto, #05a541; }
+  .filterBlock > div {
     margin-bottom: 20px; }
   .filterBlock hr {
     border: none;
