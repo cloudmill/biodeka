@@ -304,6 +304,8 @@ $(document).ready(function () {
 			$('.mainTitle').show();
 		}
 		$("#" + tab_id).addClass('current');
+
+		$(".paroller").paroller({ factor: 0.2, type: 'foreground' });
 	});
 	//tabs
 
